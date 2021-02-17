@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <fieldset>
+        <legend><h2>Contact us</h2></legend>
+        <form action="#">
+            <label for="email" class="form-label">Email</label><span data-toggle="tooltip" data-placement="top" title="required field">&times;</span>
+            <input type="email" class="form-input" id="email" required>
+            <label for="country" class="form-label">country</label><span data-toggle="tooltip" data-placement="top"
+                title="required field">&times;</span>
+            <input type="text" class="form-input" id="country" required>
+            <label for="zip" class="form-label">Zip code</label><span data-toggle="tooltip" data-placement="top"
+                title="required field">&times;</span>
+            <input type="text" class="form-input" id="zip" pattern="/(\d{5})(\d{4})|(^\d{5}-\d{4}$)/" required>
+            <label for="pwd" class="form-label">password</label><span data-toggle="tooltip" data-placement="top"
+                title="required field">&times;</span>
+            <input type="password" class="form-input" id="pwd" required>
+            <label for="pwd-confirm" class="form-label">Confirm Password</label><span data-toggle="tooltip"
+                data-placement="top" title="required field">&times;</span>
+            <input type="password" class="form-input" id="pwd-confirm" required>
+
+            <button type="submit" class="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </fieldset>
+    <script src="main.js"></script>
+</body>
+</html>
+ Email, Country, Zip Code, Password and Password Confirmation field
